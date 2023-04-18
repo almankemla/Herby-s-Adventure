@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane id="mainMenu" fx:id="mainMenu" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GameController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@titlecard.png" />
+         </image>
+      </ImageView>
+      <Button id="startButton" layoutX="338.0" layoutY="557.0" mnemonicParsing="false" onAction="#pressStart" prefHeight="100.0" prefWidth="250.0" style="-fx-background-insets: 100;" stylesheets="@startbuttonstyle.css">
+         <font>
+            <Font size="1.0" />
+         </font></Button>
+      <Button layoutX="701.0" layoutY="557.0" mnemonicParsing="false" onAction="#pressExit" prefHeight="100.0" prefWidth="250.0" style="-fx-background-insets: 100;" stylesheets="@exitbuttonstyle.css">
+         <font>
+            <Font size="1.0" />
+         </font>
+      </Button>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</Pane>
